@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import Header from '../header/index';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Header from '../header/index';
 import Home from '../../pages/home';
 import rootReducer from '../../store/reducers';
 import rootSaga from '../../store/sagas';

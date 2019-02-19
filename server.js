@@ -33,8 +33,6 @@ const dataMap = [
 	{owner: "Смирнов Владимир Агафонович",	year: 2002, crashesCount: 1, ownersCount: 1},
 ];
 
-console.log('http', http);
-
 const server = http.createServer((request, response) => {
 	const pathname = url.parse(request.url).pathname;
 

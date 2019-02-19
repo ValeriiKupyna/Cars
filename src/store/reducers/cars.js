@@ -12,19 +12,19 @@ const { START, ERROR, SUCCESS, RESET } = CommonActionTypes;
 
 const getCars = (state) => {
   return { ...state, error: null, isPending: true }
-}
+};
 
 const getCarsSuccess = (state, payload) => {
   return { ...state, isPending: false, cars: payload }
-}
+};
 
 const getCarsError = (state, payload) => {
   return { ...state, error: payload, isPending: false, cars: [] }
-}
+};
 
 const setSearchCarsNumber = (state, payload) => {
   return { ...state, searchNumber: payload }
-}
+};
 
 const cars = (state = initialState, { type, payload }) => {
   switch (type) {
@@ -36,6 +36,6 @@ const cars = (state = initialState, { type, payload }) => {
     default:
       return { ...state }
   }
-}
+};
 
 export default cars;

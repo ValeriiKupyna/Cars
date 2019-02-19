@@ -5,4 +5,3 @@ import { getCars } from "../../actions/cars";
 export function* getCarsWatcher() {
     yield takeEvery(getCars().type, getCarsWorker);
 }
-

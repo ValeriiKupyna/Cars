@@ -11,18 +11,18 @@ export const getCars = (payload) => ({
 export const getCarsSuccess = (payload) => ({
     type: GET_CAR + SUCCESS,
     payload,
-})
+});
 
 export const getCarsError = (payload) => ({
     type: GET_CAR + ERROR,
     payload
-})
+});
 
 export const getCarsReset = () => ({
     type: GET_CAR + RESET,
-})
+});
 
 export const setCarSearchNumber = (payload) => ({
     type: SET_SEARCH_CAR_NUMBER,
     payload
-})
+});
