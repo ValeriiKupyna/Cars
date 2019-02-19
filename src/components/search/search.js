@@ -29,7 +29,6 @@ export class Search extends Component {
         const {
             type = "text",
             placeholder,
-            onSubmit
         } = this.props;
 
         const { value } = this.state;

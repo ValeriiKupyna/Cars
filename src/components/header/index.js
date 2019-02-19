@@ -10,7 +10,6 @@ const mapDispatchToProps = dispatch => () => ({
     onSearch: (id) => {
         dispatch(getCars(id));
         dispatch(setCarSearchNumber(id));
-
     }
 });
 
