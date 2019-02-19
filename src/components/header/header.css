@@ -1,0 +1,13 @@
+.header__search-block {
+    position: relative;
+}
+
+.header__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    font-size: 12px;
+    color: #fff;
+    height: 12px;
+}
