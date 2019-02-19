@@ -9,6 +9,7 @@ import Header from '../header/index';
 import Home from '../../pages/home';
 import rootReducer from '../../store/reducers';
 import rootSaga from '../../store/sagas';
+import ErrorBoundary from '../error-boundary';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -29,9 +30,11 @@ export const App = () => (
                 <div className="container mt-2">
                     <div className="row">
                         <div className="col-12">
-                            <Switch>
-                                <Route path='/' exact component={Home} />
-                            </Switch>
+                            <ErrorBoundary>
+                                <Switch>
+                                    <Route path='/' exact component={Home} />
+                                </Switch>
+                            </ErrorBoundary>
                         </div>
                     </div>
                 </div>

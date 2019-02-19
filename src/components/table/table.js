@@ -16,7 +16,6 @@ export const Table = ({ items = [], children = () => { }, headers = {} }) => {
             </thead>
             <tbody>
                 {
-                    // key must be item.id
                     items.map(item => (<tr key={item.id}>{children(item)}</tr>))
                 }
             </tbody>

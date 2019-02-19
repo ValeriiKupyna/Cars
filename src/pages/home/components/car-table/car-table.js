@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import Table from '../../../../components/table';
 import PropTypes from 'prop-types';
+
+import Table from '../../../../components/table';
 
 const CARS_TABLE_HEADER = {
     owner: 'Owner',
